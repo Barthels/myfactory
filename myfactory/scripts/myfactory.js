@@ -1,4 +1,4 @@
-﻿// JavaScript Document
+// JavaScript Document
 
 // Wait for PhoneGap to load
 document.addEventListener("deviceready", onDeviceReady, false);
@@ -6,6 +6,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 // PhoneGap is ready
 function onDeviceReady() {
     getLocation();
+    alert(1);
 }
 
 function getLocation() {
@@ -18,7 +19,7 @@ function sayHello() {
     var sayHelloTextElem = document.getElementById('helloWorldText');
     var inputText = document.getElementById('txtName');
 
-    sayHelloTextElem.innerHTML = 'Hello, ' + inputText.value + '!';
+    sayHelloTextElem.innerHTML = 'Hello, ' + inputText.value + '.';
     sayHelloTextElem.style.display = 'block';
     sayHelloInputElem.style.display = 'none';
 }
